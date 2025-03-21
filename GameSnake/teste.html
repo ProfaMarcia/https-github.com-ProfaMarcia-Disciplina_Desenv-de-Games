@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Teclas do Teclado</title>
+  </head>
+  <body>
+    <h1>Pressione uma tecla do teclado</h1>
+
+    <div id="output">Nenhuma tecla pressionada ainda.</div>
+
+    <script>
+      document.addEventListener("keydown", function (event) {
+        let keyCode = event.keyCode;
+        let output = document.getElementById("output");
+
+        output.innerHTML = `Código da tecla pressionada: <strong>${keyCode}</strong>`;
+      });
+    </script>
+  </body>
+</html>
